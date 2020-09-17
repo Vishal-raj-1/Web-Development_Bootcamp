@@ -10,10 +10,12 @@
 
 <body>
     <h2>This is HTML forms tutorial</h2>
-    <form action="backend.php">
-        <label for="name"> Name</label>
+    <form action="backend.php">  <!-- action attribute shows that where our form will be submitted -->
+        <!-- label tag is used to select the box by clicking on the text in front of box , just id should be same as written in the for attribute in label tag. -->
+        <label for="name"> Name</label> 
+        <!-- div tag is used in place of br tag so that next box will be in next line as div tag is a block element it blocks whole block  -->
         <div>
-            <input type="text" name="myName" id="name">
+            <input type="text" name="myName" id="name">   <!-- to take normal text input -->
         </div>
         <br>
         <div>
@@ -21,44 +23,53 @@
         </div>
         <br>
         <div>
-            Email: <input type="email" name="myEmail">
+            Email: <input type="email" name="myEmail">    <!-- to take email as input -->
         </div>
 
         <br>
         <div>
-            Date: <input type="date" name="myDate">
+            Date: <input type="date" name="myDate">       <!-- to take date as input , a whole calender will be there -->
         </div>
         <br>
         <div>
+            <!-- to take number as input , only numbers can be added including 'e' as e is exponential to write some 10 to the power numbers -->
             Bonus: <input type="number" name="myBonus">
+            <!-- name attribute of all these tags shows the name by which backend will take input . -->
         </div>
         <br>
         <div>
+            <!-- checkbox is used to make a box which can either be selected by user or not selected. -->
+            <!-- if we write checked then checkbox will be already selected(default) -->
             Are you eligible?: <input type="checkbox" name="myEligibility" checked>
         </div>
         <br>
         <div>
+        <!-- radio button is used when we have to make only one choice from no of choices , we can only select one at a time. name should be same for all options -->
             Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender">
             Other <input type="radio" name="myGender">
         </div>
 
         <br>
         <div>
+            textarea is used to make an area of the space we want , we can decide the rows and columns.
             Write about yourself: <br><textarea name="myText" cols="90" rows="10"></textarea>
         </div>
 
         <br>
         <div>
             <label for="car">Car</label>
+            <!-- select is used to make selections from the given options -->
             <select name="myCar" id="car">
                 <option value="ind">Indica</option>
-                <option value="swf" selected>Swift</option>
+                <option value="swf" selected>Swift</option>   <!-- selected will select the default option for us  -->
             </select>
         </div>
         <br>
 
         <div>
+            <!-- for submit button -->
             <input type="submit" value="Submit Now">
+            <!-- to reset the whole from we filled yet. -->
             <input type="reset" value="Reset Now">
         </div>
     </form>
