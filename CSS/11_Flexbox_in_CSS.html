@@ -33,16 +33,16 @@
 
             /* justify-content will justify the content in horizontal direction */
             
-            /* justify-content: center; */      /* it will put all the boxes in the center of the screen . */
+            /* justify-content: center; */      /* it will put all the boxes in the center of the screen in horizontal direction. */
             /* justify-content: space-between; */  /* it will put equal sapces between every two boxes excluding the left and right space. */
             /* justify-content: space-evenly; */  /* it will put equal sapces between every two boxes including the left and right space. */
             /* justify-content: space-around; */  /* it will put equal sapces around left and right of a box . */
 
             /* justify-content will justify the content in vertical direction */
-            /* align-items: center; */
-            /* align-items: flex-end; */
-            /* align-items: flex-start; */
-            /* align-items: stretch; */ 
+            /* align-items: center; */   /* it will put all the boxes in the center of the screen in vertical direction. */
+            /* align-items: flex-end; */  /* it will put all the boxes in the end of the screen starting from left goinf towards right. */
+            /* align-items: flex-start; */ /* it will put all the boxes in the start of the screen starting from left goinf towards right.(its default) */
+            /* align-items: stretch; */  /* Aligns flex items along the cross axis of the current line of the flex container. */
         }
         .item{
             width: 200px;
@@ -63,8 +63,8 @@
 
         }
         #item-2{
-            /* flex-grow: 3;
-            flex-shrink: 3 ; */
+            /* flex-grow: 3;   the box which have more flex grow will expand more when we expand our webpage.
+            flex-shrink: 3 ;   the box which have more flex shrink will shrink more when we contract our webpage*/
             flex-basis: 160px;
             /* when flex-direction is set to row flex-basis: will control width */
             /* when flex-direction is set to column flex-basis: will control height */
